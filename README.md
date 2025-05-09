@@ -1,101 +1,97 @@
-<<<<<<< HEAD
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+# React Native Components Collection
+## Table of Contents
+1. [App]
+2. [Flatcards]
+3. [Login]
+4. [Product_Showcase_App]
+5. [States]
+6. [Scrollwith_Img]
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## App
 
-## Step 1: Start Metro
+The `App.js` file is the entry point of this project. It serves as a container for various individual components that can be tested by simply uncommenting the corresponding section of the code. These components include:
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## Flatcards
+### Description
+This component renders a set of cards where users can select topics of interest. Each card has a background color and icon representing the topic.Description:
+The FlatCards section is a visually organized layout that displays a group of card-like components in a flat row or grid format. Each card can represent a product, category, or any quick info snippet. This section is ideal for showcasing multiple items side-by-side and allows for better visual categorization of content.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## Login
+### Description
+A simple login form where users can enter their credentials to sign in. If the fields are not filled, an alert is shown to ask users to fill both fields.
 
-```sh
-# Using npm
-npm start
+Features
+Email and password input fields
+Sign in button
+Google Sign In button (simulated)
+Forgot password and Sign Up options
 
-# OR using Yarn
-yarn start
-```
+## Product Showcase App
+### Description
+A product showcase application where users can browse products by category. Each product displays its name, category, and price. Clicking on a product opens a modal with more details about the product.
 
-## Step 2: Build and run your app
+Features
+Horizontal scrolling for categories.
+List of products with detailed view in a modal.
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+## States
+### Description
+A simple demonstration of how to handle multiple state values with React Native using useState and useEffect. It updates and shows an alert whenever the state is changed.
 
-### Android
+Features
+Two state variables count and data.
+Alerts are triggered when either of the states is updated.
+Buttons to update the states.
 
-```sh
-# Using npm
-npm run android
+## Scrollwith_Img
+### Description
+This component shows several categories (Sports, Games, and Drawing) with horizontal scrolling. Each item in a category has an image, and clicking the item opens the corresponding Wikipedia page for that item.
 
-# OR using Yarn
-yarn android
-```
+Features
+Horizontal scrolling of items.
+Links to Wikipedia for each item.
 
-### iOS
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+## ScrollCards
+### Description
+This component displays a set of scrollable cards in a horizontal layout.
+ Cards are swipeable, and can be customized to be clickable for navigation or display additional details.
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+### -------------------------Core React Native Concepts Covered----------------------------------------------------
+## Component-Based Structure
 
-```sh
-bundle install
-```
+Created functional components using function ComponentName() {} and export default.
+## Hooks Usage
+useState for managing input and UI state.
+useEffect for side-effects on mount (in States example).
+useRef for direct DOM-like access to TextInput.
 
-Then, and every time you update your native dependencies, run:
+## UI Elements from react-native
+Used core components like View, Text, TextInput, TouchableOpacity, Pressable, Button, ScrollView, SafeAreaView.
 
-```sh
-bundle exec pod install
-```
+## Styling with StyleSheet
+Created and applied custom styles using StyleSheet.create.
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+## Event Handling
+Button press, TextInput change, and Alert triggering on user actions.
 
-```sh
-# Using npm
-npm run ios
+## Conditional Rendering / Alerts
+Simple conditional checks to validate input before showing an alert.
 
-# OR using Yarn
-yarn ios
-```
+## Modular Reusability
+You separated UI elements like <Userdata /> and modal-based components.
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+## Third-Party Libraries Integration
+Used react-native-vector-icons/MaterialCommunityIcons.
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+## ScrollView
+Implemented horizontal scrolling layout.
+Nested Views & Layouts
+Used flexDirection, margin, padding for proper layout.
 
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
-=======
-# React-Native-Projects1
->>>>>>> 9ff5f0521d6e41a620b140a46c9153d28ff9354c
+## Additional 
+Used secureTextEntry for password inputs.
+Used Alert for native feedback.
+Integrated onPress, onChangeText, and custom handlers cleanly.
+Used SafeAreaView for iOS-safe screen padding.
